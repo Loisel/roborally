@@ -100,7 +100,8 @@ class @CardLogic
     if readyPlayerCnt == playerCnt
       Games.update(player.gameId, {$set: {timer: -1}})
       GameState.nextGamePhase(player.gameId)
-    else if readyPlayerCnt == playerCnt-1
+    # else if readyPlayerCnt == playerCnt-1
+    else if readyPlayerCnt >= 1
       # start timer
       Games.update(player.gameId, {$set: {timer: 1}})
       Meteor.setTimeout ->

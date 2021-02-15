@@ -62,7 +62,7 @@ Meteor.methods({
         gameId: gameId,
         userId: user._id,
         name: author,
-        lives: 3,
+        lives: 7,
         damage: 0,
         visited_checkpoints: 0,
         needsRespawn: false,

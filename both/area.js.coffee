@@ -44,6 +44,21 @@ class @Area
       @addStart  0, 2, 'up'
       @addStart 11, 2, 'up'
 
+    anewstart: () ->
+      @addWall  3, 0, 'up'
+      @addWall  4, 0, 'up'
+      @addWall  7, 0, 'up'
+      @addWall  8, 0, 'up'
+
+      @addStart  4, 2, 'up'
+      @addStart  7, 2, 'up'
+      @addStart  3, 2, 'up'
+      @addStart  8, 2, 'up'
+      @addStart  1, 2, 'up'
+      @addStart 10, 2, 'up'
+      @addStart  2, 2, 'up'
+      @addStart  9, 2, 'up'
+
     roller: () ->
       @setRoller  0, 2, 'rrdrrr'
       @setRoller 11, 2, 'lldlll'
@@ -119,6 +134,80 @@ class @Area
       @addLaser 1,2, 'd', 2
       @addDoubleLaser 0,1, 'r', 1
 
+    anewmap: () ->
+      @setVoid 6, 9
+      @setExpressRoller 8,8, 'rrrdddd'
+      @setExpressRoller 8,9, 'rrrd'
+      @setExpressRoller 4,8, 'lllldddd'
+      @setExpressRoller 4,9, 'lllld'
+      @setExpressRoller 10,6, 'uuuu'
+      @setRoller 11,1, 'dddddd'
+      @setPusher 10,6, 'right', 'odd'
+      @setPusher 10,5, 'right', 'even'
+      @setPusher 10,4, 'right', 'odd'
+
+    quarterpounder: () ->
+      @setVoid 6, 0
+      @setVoid 5, 2
+      @setVoid 1, 5
+      @setVoid 2, 6
+      @setVoid 5, 9
+      @setVoid 9, 9
+      @setVoid 6, 10
+      @setRoller 5,1, 'lllldddd'
+      @setRoller 2,5, 'uuurrr'
+      @setRoller 0,9, 'rr'
+      @setRoller 3,9, 'rr'
+      @setRoller 2,11, 'uu'
+      @setRoller 2,8, 'uu'
+      @setRoller 11,1, 'ddddluuuuullll'
+      @setRoller 9,1, 'ddddluuuuu'
+      @setRoller 7,1, 'ddluuu'
+      @setRoller 9,6, 'ddd'
+      @setRoller 9,11, 'uu'
+      @setRoller 6,9, 'rrr'
+      @setRoller 11,9, 'll'
+      @setPusher 1,0, 'down', 'even'
+      @setPusher 2,0, 'down', 'odd'
+      @setPusher 0,3, 'right', 'even'
+      @setPusher 0,4, 'right', 'odd'
+      @setOption  3, 0
+      @setOption  0, 2
+      @setOption  0, 8
+      @setOption  11, 8
+      @setOption  5, 5
+      @setOption  6, 5
+      @setOption  5, 6
+      @setOption  6, 6
+      @addLaser 4, 4, 'r', 4
+      @addLaser 7, 4, 'd', 4
+      @addLaser 7, 7, 'l', 4
+      @addLaser 4, 7, 'u', 4
+      @setGear 2,9, 'cw'
+      @addWall  5, 1, 'right'
+      @addWall  5, 3, 'right'
+      @addWall  5, 8, 'right'
+      @addWall  5, 10, 'right'
+      @addWall  5, 11, 'right'
+      @addWall  0, 5, 'down'
+      @addWall  3, 5, 'down'
+      @addWall  8, 5, 'down'
+      @addWall  9, 5, 'down'
+      @addWall  10, 5, 'down'
+      @addWall  11, 5, 'down'
+      @addWall  0, 0, 'up-left'
+      @addWall  11, 0, 'up-right'
+      @addWall  11, 11, 'down-right'
+      @addWall  0, 11, 'down-left'
+      @addWall  5, 11, 'right'
+      @addWall  3, 0, 'up'
+      @addWall  0, 2, 'left'
+      @addWall  0, 8, 'left'
+      @addWall  11, 8, 'right'
+      @addWall  11, 3, 'right'
+      @addWall  11, 2, 'right'
+      @addWall  9, 0, 'up'
+      
     cross: () ->
       @setVoid 9, 2
       @setVoid 1, 4

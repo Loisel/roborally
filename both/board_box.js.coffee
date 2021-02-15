@@ -1,5 +1,5 @@
 class @BoardBox
-  @CATALOG = [ 'default', 
+  @CATALOG = [ 'default', 'new_default', 'quarter_pounder',
                # beginner courses
                'risky_exchange', 'checkmate', 'dizzy_dash',
                'island_hop', 'chop_shop_challenge', 'twister', 'bloodbath_chess',
@@ -50,6 +50,24 @@ class @BoardBox
       board.addCheckpoint(7, 3)
       board.addCheckpoint(1, 8)
       board.addCheckpoint(7, 7)
+      return board
+    new_default: () ->
+      board = new Board('new_default',1)
+      board.length = 'short'
+      board.addRallyArea('anewmap')
+      board.addStartArea('anewstart')
+      board.addCheckpoint(6, 10)
+      board.addCheckpoint(6, 8)
+      return board
+    quarter_pounder: () ->
+      board = new Board('quarter_pounder',1)
+      board.length = 'short'
+      board.addRallyArea('quarterpounder')
+      board.addStartArea('roller')
+      board.addCheckpoint(0, 0)
+      board.addCheckpoint(0, 11)
+      board.addCheckpoint(11, 0)
+      board.addCheckpoint(11, 11)
       return board
     test: () ->
       board = new Board('test',1,4,4,5)
