@@ -27,7 +27,7 @@ template(name="board")
 
     br
     each markers
-      .marker(class=marker_class, style=position, data-tooltip-direction="n" data-tooltip="This is a respawn location")
+      .marker(class=marker_class, style=position, data-tooltip-direction="n" data-tooltip= name)
         img(src= path, style=direction )
     each robots
       .robot(class=robot_class, style=position, data-tooltip= name)

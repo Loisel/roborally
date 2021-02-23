@@ -179,6 +179,7 @@ class @Area
       @setOption  6, 5
       @setOption  5, 6
       @setOption  6, 6
+      @setExpressRoller 5,4, 'rrdddllluuur'
       @addLaser 4, 4, 'r', 4
       @addLaser 7, 4, 'd', 4
       @addLaser 7, 7, 'l', 4

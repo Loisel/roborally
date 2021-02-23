@@ -3,14 +3,8 @@
   "version": "1.0.0",
   "description": "RoboRally\r =========",
   "main": "client/main.js",
-  "directories": {
-    "test": "tests"
-  },
   "dependencies": {
-    "@babel/runtime": "^7.12.5",
-    "babel-runtime": "^6.23.0",
-    "bcrypt": "^5.0.0",
-    "bcrypt-nodejs": "0.0.3"
+    "@babel/runtime": "^7.12.13"
   },
   "devDependencies": {},
   "scripts": {
@@ -18,16 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcelpanse/roborally.git"
+    "url": "git+https://github.com/blinkingnoise/roborally.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/marcelpanse/roborally/issues"
+    "url": "https://github.com/blinkingnoise/roborally/issues"
   },
-  "homepage": "https://github.com/marcelpanse/roborally#readme",
-  "engines": {
-    "node": "4.6.2",
-    "npm": "4.0.3"
-  }
+  "homepage": "https://github.com/blinkingnoise/roborally#readme"
 }

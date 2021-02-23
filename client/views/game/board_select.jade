@@ -9,6 +9,9 @@ template(name="boardselect")
       li(role='presentation')
         a(href='#expert' role='pill' data-toggle='pill')
           | Expert courses
+      li(role='presentation')
+        a(href='#custom' role='pill' data-toggle='pill')
+          | Custom courses
     .tab-content
       .tab-pane.active(role='tabpanel' id='beginner')
         each beginnerBoards
@@ -16,6 +19,10 @@ template(name="boardselect")
             +thumbnail
       .tab-pane(role='tabpanel' id='expert')
         each expertBoards
+          .boardchoice
+            +thumbnail
+      .tab-pane(role='tabpanel' id='custom')
+        each customBoards
           .boardchoice
             +thumbnail
     div(style="clear:both;")

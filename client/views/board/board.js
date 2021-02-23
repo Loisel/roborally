@@ -29,15 +29,14 @@ Template.board.helpers({
     return r;
   },
   markers: function () {
-    var m = [];
-    var p_cnt = this.players.length;
+    let m = [];
     this.players.forEach(function (player) {
-      var deg = 360 / p_cnt * player.robotId;
+      let playerName = (player.userId === Meteor.userId()) ? "You" : player.name;
       m.push({
         path: "/robots/marker_" + player.robotId.toString() + ".png",
         marker_class: "m" + player.robotId.toString(),
         position: cssPosition(player.start.x, player.start.y),
-        direction: cssRotate(deg)
+        name: 'respawn location ( ' + playerName + ' )'
       });
     });
     return m;

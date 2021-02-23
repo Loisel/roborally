@@ -330,10 +330,22 @@ GameLogic = {
 
   function removePlayerWithDelay(player, callback) {
     Meteor.setTimeout(function () {
+      let playerCards, unusedCard, _i, _len, _ref;
       player.position.x = player.board().width - 1;
       player.position.y = player.board().height;
       player.direction = GameLogic.UP;
-      Players.update(player._id, player);
+      player.optionCards = {};
+
+      playerCards = Cards.findOne({playerId: player._id});
+      _ref = playerCards.handCards;
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        unusedCard = _ref[_i];
+        if (unusedCard >= 0) {
+        let deck = Deck.findOne({gameId: player.gameId})
+          deck.cards.push(unusedCard);
+        }
+      }
+
       console.log("removing player", player.name);
       Players.update(player._id, player);
       callback();

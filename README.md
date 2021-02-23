@@ -5,7 +5,7 @@ GNU General Public License (GPL) 2.0
 
 Fork
 ----
-This is a fork of https://github.com/marcelpanse/roborally, updated to Meteor 1.12, without tracking and social
+This is a fork of https://github.com/marcelpanse/roborally, updated to Meteor 2, without tracking and social
  media integration. 
 
 Original README

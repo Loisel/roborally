@@ -1,19 +1,21 @@
 class @BoardBox
-  @CATALOG = [ 'default', 'new_default', 'quarter_pounder',
+  @CATALOG = [ 'default',
                # beginner courses
                'risky_exchange', 'checkmate', 'dizzy_dash',
                'island_hop', 'chop_shop_challenge', 'twister', 'bloodbath_chess',
                'around_the_world', 'death_trap', 'pilgrimage',
                # expert courses
                'vault_assault', 'whirlwind_tour', 'lost_bearings', 'robot_stew',
-               'oddest_sea', 'against_the_grain', 'island_king', 
+               'oddest_sea', 'against_the_grain', 'island_king',
                # with special rules
                'tricksy', #moving_targets',
                'set_to_kill', 'factory_rejects', 'option_world', 'tight_collar', 
-               'ball_lightning',  'flag_fry', 'crowd_chess' , 'custom_made'
+               'ball_lightning',  'flag_fry', 'crowd_chess' , 'custom_made', 'quarter_pounder'
              ]
-               
+
+
   @BEGINNER_COURSE_CNT = 11
+  @CUSTOM_COURSE_IDX = 26
   @cache = []
   @test_board_id = @CATALOG.length
 
@@ -50,14 +52,6 @@ class @BoardBox
       board.addCheckpoint(7, 3)
       board.addCheckpoint(1, 8)
       board.addCheckpoint(7, 7)
-      return board
-    new_default: () ->
-      board = new Board('new_default',1)
-      board.length = 'short'
-      board.addRallyArea('anewmap')
-      board.addStartArea('anewstart')
-      board.addCheckpoint(6, 10)
-      board.addCheckpoint(6, 8)
       return board
     quarter_pounder: () ->
       board = new Board('quarter_pounder',1)
@@ -325,14 +319,13 @@ class @BoardBox
       board = new Board('custom_made', 4, 8, 12, 28)
       board.length = 'long'
       board.addRallyArea('canner_row',0,0,0)
-      board.addStartArea('roller',0,12,180)
+      board.addStartArea('crowd',0,12,180)
       board.addRallyArea( 'vault', 0,16, 90)
 
-      board.addCheckpoint(8, 3)
-      board.addCheckpoint(3, 24)
-      board.addCheckpoint(11, 18)
       board.addCheckpoint(5, 9)
-
+      board.addCheckpoint(9, 22)
+      board.addCheckpoint(3, 4)
+      board.addCheckpoint(3, 24)
       return board
 
 
