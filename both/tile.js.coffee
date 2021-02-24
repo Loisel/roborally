@@ -38,8 +38,10 @@ class @Tile
            when ending here after a card has been played."
       when Tile.VOID
         "Don't fall in this giant hole in the ground or you'll die."
-      when Tile.REPAIR, Tile.OPTION
+      when Tile.REPAIR
         "If you end your hand on a repair site, one damage will be repaired."
+      when Tile.OPTION
+        "If you end your hand on an option site, you draw one option card."
       when Tile.GEAR
         msg = "This gear will turn you "
         msg += if @gear_type is "cw" then "right" else "left"

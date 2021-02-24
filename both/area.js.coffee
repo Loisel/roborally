@@ -86,6 +86,35 @@ class @Area
       @addStart 10, 1, 'up'
       @addStart  0, 0, 'up'
       @addStart 11, 0, 'up'
+
+    roller2: () ->
+      @setRoller  0, 2, 'rrdrrr'
+      @setRoller 11, 2, 'lldlll'
+
+      @addWall 2, 0, 'up'
+      @addWall 4, 0, 'up'
+      @addWall 7, 0, 'up'
+      @addWall 9, 0, 'up'
+      @addWall 4, 0, 'left'
+      @addWall 7, 0, 'right'
+
+      @addWall  1, 1, 'left'
+      @addWall  2, 1, 'left'
+      @addWall 10, 1, 'left'
+      @addWall 11, 1, 'left'
+      @addWall  8, 2, 'left'
+      @addWall  6, 2, 'left'
+      @addWall  6, 3, 'left'
+
+      @addStart  5, 2, 'up'
+      @addStart  6, 2, 'up'
+      @addStart  4, 2, 'up'
+      @addStart  7, 2, 'up'
+      @addStart  1, 1, 'up'
+      @addStart 10, 1, 'up'
+      @addStart  0, 0, 'up'
+      @addStart 11, 0, 'up'
+
     crowd: () ->
       @addWall  1, 2, 'left'
       @addWall  3, 2, 'left'
@@ -160,7 +189,8 @@ class @Area
       @setRoller 3,9, 'rr'
       @setRoller 2,11, 'uu'
       @setRoller 2,8, 'uu'
-      @setRoller 11,1, 'ddddluuuuullll'
+      @setRoller 11,1, 'ddddluuuu'
+      @setRoller 10,0, 'llll'
       @setRoller 9,1, 'ddddluuuuu'
       @setRoller 7,1, 'ddluuu'
       @setRoller 9,6, 'ddd'
@@ -169,21 +199,17 @@ class @Area
       @setRoller 11,9, 'll'
       @setPusher 1,0, 'down', 'even'
       @setPusher 2,0, 'down', 'odd'
-      @setPusher 0,3, 'right', 'even'
-      @setPusher 0,4, 'right', 'odd'
-      @setOption  3, 0
+      @setRepair  3, 0
       @setOption  0, 2
       @setOption  0, 8
-      @setOption  11, 8
+      @setRepair  11, 8
       @setOption  5, 5
-      @setOption  6, 5
-      @setOption  5, 6
       @setOption  6, 6
+      @setRepair  5, 6
+      @setRepair  6, 5
       @setExpressRoller 5,4, 'rrdddllluuur'
       @addLaser 4, 4, 'r', 4
-      @addLaser 7, 4, 'd', 4
       @addLaser 7, 7, 'l', 4
-      @addLaser 4, 7, 'u', 4
       @setGear 2,9, 'cw'
       @addWall  5, 1, 'right'
       @addWall  5, 3, 'right'
@@ -208,7 +234,8 @@ class @Area
       @addWall  11, 3, 'right'
       @addWall  11, 2, 'right'
       @addWall  9, 0, 'up'
-      
+      Area.boundaryWalls.call(@)
+
     cross: () ->
       @setVoid 9, 2
       @setVoid 1, 4
