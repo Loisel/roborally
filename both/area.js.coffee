@@ -240,7 +240,7 @@ class @Area
       @setOption 7,11
       @setExpressRoller 0,5, 'rrrddrrrrruurrr'
       @setExpressRoller 11,4, 'llluulllllddlll'
-      @addDoubleLaser 4,4, 'r',4
+      @addDoubleLaser 4,3, 'r',4
       @addDoubleLaser 4,6, 'r',4
 
     quarterpounder: () ->
