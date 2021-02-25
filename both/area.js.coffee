@@ -207,10 +207,10 @@ class @Area
       @setOption 6,11
       @setOption 4,11
       @setOption 7,11
-      @addLaser 5,3, 'r', 2
-      @addLaser 7,4, 'd', 2
-      @addLaser 6,6, 'l', 2
-      @addLaser 4,5, 'u', 2
+      @addLaser 4,3, 'r', 4
+      @addLaser 7,3, 'd', 4
+      @addLaser 7,6, 'l', 4
+      @addLaser 4,6, 'u', 4
       @setExpressRoller 0,5, 'rrrddrrrrruurrrr'
       @setExpressRoller 11,4, 'llluulllllddllll'
 
