@@ -115,6 +115,27 @@ class @Area
       @addStart  0, 0, 'up'
       @addStart 11, 0, 'up'
 
+    roller3: () ->
+      @setRoller  0, 2, 'rrdrrr'
+      @setRoller 11, 2, 'lldlll'
+
+      @addWall  1, 1, 'left'
+      @addWall  2, 1, 'left'
+      @addWall 10, 1, 'left'
+      @addWall 11, 1, 'left'
+      @addWall  8, 2, 'left'
+      @addWall  6, 2, 'left'
+      @addWall  6, 3, 'left'
+
+      @addStart  5, 2, 'up'
+      @addStart  6, 2, 'up'
+      @addStart  4, 2, 'up'
+      @addStart  7, 2, 'up'
+      @addStart  1, 1, 'up'
+      @addStart 10, 1, 'up'
+      @addStart  0, 0, 'up'
+      @addStart 11, 0, 'up'
+
     crowd: () ->
       @addWall  1, 2, 'left'
       @addWall  3, 2, 'left'

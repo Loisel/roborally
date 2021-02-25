@@ -67,7 +67,7 @@ class @BoardBox
       board = new Board('schnoi',1)
       board.length = 'short'
       board.addRallyArea('schnoi')
-      board.addStartArea('roller2')
+      board.addStartArea('roller3')
       board.addCheckpoint(5, 4)
       board.addCheckpoint(5, 5)
       board.addCheckpoint(6, 4)
