@@ -123,7 +123,6 @@ class @Area
       @addWall  2, 1, 'left'
       @addWall 10, 1, 'left'
       @addWall 11, 1, 'left'
-      @addWall  8, 2, 'left'
       @addWall  6, 2, 'left'
       @addWall  6, 3, 'left'
 
@@ -207,6 +206,8 @@ class @Area
       @setOption 6,11
       @setOption 4,11
       @setOption 7,11
+      @setRepair 0,4
+      @setRepair 11,5
       @addLaser 4,3, 'r', 4
       @addLaser 7,3, 'd', 4
       @addLaser 7,6, 'l', 4
@@ -227,14 +228,20 @@ class @Area
       @setVoid 7, 10
       @setVoid 3, 11
       @setVoid 8, 11
+      @setRepair 0,4
+      @setRepair 11,5
+      @setOption 2,8
+      @setOption 9,8
       @setOption 5,10
       @setOption 6,10
       @setOption 5,11
       @setOption 6,11
       @setOption 4,11
       @setOption 7,11
-      @setExpressRoller 0,5, 'rrrddrrrrruurrrr'
-      @setExpressRoller 11,4, 'llluulllllddllll'
+      @setExpressRoller 0,5, 'rrrddrrrrruurrr'
+      @setExpressRoller 11,4, 'llluulllllddlll'
+      @addLaser 3,3, 'r',6
+      @addLaser 3,6, 'r',6
 
     quarterpounder: () ->
       @setVoid 6, 0
