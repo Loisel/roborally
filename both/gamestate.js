@@ -74,7 +74,8 @@ GameState = {
       player.playedCardsCnt = 0;
       player.submitted = false;
       if (player.hasOptionCard('circuit_breaker') && player.damage >= 3) {
-        player.powerState = GameLogic.DOWN;
+          player.powerState = GameLogic.DOWN;
+	  player.optionCards = {};
       }
 
       if (player.powerState === GameLogic.OFF) {
