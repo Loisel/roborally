@@ -214,6 +214,28 @@ class @Area
       @setExpressRoller 0,5, 'rrrddrrrrruurrrr'
       @setExpressRoller 11,4, 'llluulllllddllll'
 
+    schnoi2: () ->
+      @setVoid 0, 8
+      @setVoid 1, 8
+      @setVoid 0, 9
+      @setVoid 11, 8
+      @setVoid 10, 8
+      @setVoid 11, 9
+      @setVoid 5, 9
+      @setVoid 6, 9
+      @setVoid 4, 10
+      @setVoid 7, 10
+      @setVoid 3, 11
+      @setVoid 8, 11
+      @setOption 5,10
+      @setOption 6,10
+      @setOption 5,11
+      @setOption 6,11
+      @setOption 4,11
+      @setOption 7,11
+      @setExpressRoller 0,5, 'rrrddrrrrruurrrr'
+      @setExpressRoller 11,4, 'llluulllllddllll'
+
     quarterpounder: () ->
       @setVoid 6, 0
       @setVoid 5, 2
