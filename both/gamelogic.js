@@ -131,8 +131,11 @@ GameLogic = {
     players.forEach(function (player) {
         if (player.tile().option) {
           player.drawOptionCard();
+	  player.damage = Math.max(player.damage-1, 0);
+        } else if (player.tile().checkpoint) {
+	  player.damage = Math.max(player.damage-1, 0);
         } else if (player.tile().repair) {
-          player.damage = Math.max(player.damage -3, 0);
+          player.damage = Math.max(player.damage-3, 0);
 	}
         Players.update(player._id, player);
     });
