@@ -163,17 +163,35 @@ class @Area
       @addLaser 1,2, 'd', 2
       @addDoubleLaser 0,1, 'r', 1
 
-    anewmap: () ->
+    schnoi: () ->
+      @setVoid 0, 8
+      @setVoid 1, 8
+      @setVoid 0, 9
+      @setVoid 11, 8
+      @setVoid 10, 8
+      @setVoid 11, 9
+      @setVoid 5, 9
       @setVoid 6, 9
-      @setExpressRoller 8,8, 'rrrdddd'
-      @setExpressRoller 8,9, 'rrrd'
-      @setExpressRoller 4,8, 'lllldddd'
-      @setExpressRoller 4,9, 'lllld'
-      @setExpressRoller 10,6, 'uuuu'
-      @setRoller 11,1, 'dddddd'
-      @setPusher 10,6, 'right', 'odd'
-      @setPusher 10,5, 'right', 'even'
-      @setPusher 10,4, 'right', 'odd'
+      @setVoid 4, 10
+      @setVoid 7, 10
+      @setVoid 3, 11
+      @setVoid 8, 11
+      @setVoid 4, 3
+      @setVoid 7, 3
+      @setVoid 4, 6
+      @setVoid 7, 6
+      @setOption 5,10
+      @setOption 6,10
+      @setOption 5,11
+      @setOption 6,11
+      @setOption 4,11
+      @setOption 7,11
+      @addLaser 5,3, 'r', 2
+      @addLaser 7,4, 'd', 2
+      @addLaser 6,6, 'l', 2
+      @addLaser 4,5, 'u', 2
+      @setExpressRoller 0,5, 'rrrddrrrrruurrrr'
+      @setExpressRoller 11,4, 'llluulllllddllll'
 
     quarterpounder: () ->
       @setVoid 6, 0

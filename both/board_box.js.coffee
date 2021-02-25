@@ -10,7 +10,7 @@ class @BoardBox
                # with special rules
                'tricksy', #moving_targets',
                'set_to_kill', 'factory_rejects', 'option_world', 'tight_collar', 
-               'ball_lightning',  'flag_fry', 'crowd_chess' , 'custom_made', 'quarter_pounder'
+               'ball_lightning',  'flag_fry', 'crowd_chess' , 'custom_made', 'quarter_pounder', 'schnoi'
              ]
 
 
@@ -62,6 +62,16 @@ class @BoardBox
       board.addCheckpoint(11, 11)
       board.addCheckpoint(0, 0)
       board.addCheckpoint(0, 11)
+      return board
+    schnoi: () ->
+      board = new Board('schnoi',1)
+      board.length = 'short'
+      board.addRallyArea('schnoi')
+      board.addStartArea('roller2')
+      board.addCheckpoint(5, 4)
+      board.addCheckpoint(5, 5)
+      board.addCheckpoint(6, 4)
+      board.addCheckpoint(6, 5)
       return board
     test: () ->
       board = new Board('test',1,4,4,5)
