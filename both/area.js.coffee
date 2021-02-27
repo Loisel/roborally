@@ -216,13 +216,20 @@ class @Area
       @setExpressRoller 11,4, 'llluulllllddllll'
 
     please_mind_the_gap: () ->
-      @addWall  3, 15, 'left'
-      @addWall  3, 14, 'left'
-      @addWall  3, 13, 'left'
-      @addWall  3, 12, 'left'
-      @addWall  3, 11, 'left'
-      @addWall  3, 10, 'left'
-      @addWall  3, 9, 'left'
+      @addWall  4, 5, 'left'
+      @addWall  4, 6, 'left'
+      @addWall  4, 7, 'left'
+      @addWall  4, 8, 'left'
+      @addWall  4, 11, 'left'
+      @addWall  4, 10, 'left'
+      @addWall  4, 9, 'left'
+      @addWall  7, 5, 'right'
+      @addWall  7, 6, 'right'
+      @addWall  7, 7, 'right'
+      @addWall  7, 8, 'right'
+      @addWall  7, 10, 'right'
+      @addWall  7, 9 'right'
+      @addWall  7, 11, 'right'
       @setVoid 0, 8
       
     schnoi2: () ->
