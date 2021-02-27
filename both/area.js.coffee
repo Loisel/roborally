@@ -217,12 +217,12 @@ class @Area
 
     please_mind_the_gap: () ->
       @addWall  3, 15, 'left'
-      @addWall  3, 14, 'left
-      @addWall  3, 13, 'left
-      @addWall  3, 12, 'left
-      @addWall  3, 11, 'left
-      @addWall  3, 10, 'left
-      @addWall  3, 9, 'left
+      @addWall  3, 14, 'left'
+      @addWall  3, 13, 'left'
+      @addWall  3, 12, 'left'
+      @addWall  3, 11, 'left'
+      @addWall  3, 10, 'left'
+      @addWall  3, 9, 'left'
       @setVoid 0, 8
       
     schnoi2: () ->
