@@ -215,6 +215,9 @@ class @Area
       @setExpressRoller 0,5, 'rrrddrrrrruurrrr'
       @setExpressRoller 11,4, 'llluulllllddllll'
 
+      Please mind the gap: () ->
+      @setVoid 0, 8
+      
     schnoi2: () ->
       @setVoid 0, 8
       @setVoid 1, 8
