@@ -230,6 +230,10 @@ class @Area
       @addWall  7, 10, 'right'
       @addWall  7, 9, 'right'
       @addWall  7, 11, 'right'
+      @setExpressRoller 0,9, 'ddd'
+      @setExpressRoller 1,9, 'ddd'
+      @setExpressRoller 2,9, 'ddd'
+      @setExpressRoller 3,9, 'ddd'
       @setVoid 0, 8,
       
     schnoi2: () ->
