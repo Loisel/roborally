@@ -228,9 +228,9 @@ class @Area
       @addWall  7, 7, 'right'
       @addWall  7, 8, 'right'
       @addWall  7, 10, 'right'
-      @addWall  7, 9 'right'
+      @addWall  7, 9, 'right'
       @addWall  7, 11, 'right'
-      @setVoid 0, 8
+      @setVoid 0, 8,
       
     schnoi2: () ->
       @setVoid 0, 8
