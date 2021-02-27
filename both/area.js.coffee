@@ -215,7 +215,7 @@ class @Area
       @setExpressRoller 0,5, 'rrrddrrrrruurrrr'
       @setExpressRoller 11,4, 'llluulllllddllll'
 
-      Please mind the gap: () ->
+      please_mind_the_gap: () ->
       @setVoid 0, 8
       
     schnoi2: () ->
