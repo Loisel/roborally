@@ -214,7 +214,7 @@ class @Area
       @setOption 6,4
       @setOption 5,3
       @setOption 5,5
-      @setExpressRoller 3,4, 'ururrdlddrdrrulu'
+      @setExpressRoller 3,4, 'ururrdrddldllulu'
       @addLaser 5,0, 'd', 12 
       @addLaser 0,4, 'r', 12 
     test: () ->
