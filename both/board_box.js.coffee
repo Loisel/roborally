@@ -88,10 +88,10 @@ class @BoardBox
       board.length = 'short'
       board.addRallyArea('holy_cross')
       board.addStartArea('roller3')
-      board.addCheckpoint(5, 4)
-      board.addCheckpoint(5, 5)
-      board.addCheckpoint(6, 4)
-      board.addCheckpoint(6, 5)
+      board.addCheckpoint(5, 0)
+      board.addCheckpoint(5, 11)
+      board.addCheckpoint(0, 4)
+      board.addCheckpoint(11, 4)
       return board
     schnoi2: () ->
       board = new Board('schnoi2',1)
