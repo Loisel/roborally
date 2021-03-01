@@ -84,7 +84,7 @@ class @BoardBox
       return board
     holy_cross: () ->
       board = new Board('holy_cross',1)
-      board.length = 'medium'
+      board.length = 'short'
       board.addRallyArea('holy_cross')
       board.addStartArea('roller3')
       board.addCheckpoint(5, 4)
