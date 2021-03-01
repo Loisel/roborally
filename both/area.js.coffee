@@ -209,7 +209,14 @@ class @Area
       @setRoller 6,10, 'r'
       @setRoller 4,8, 'r'
       @setRoller 6,8, 'l'
-      
+      @setVoid 5, 4,
+      @setOption 4,4
+      @setOption 6,4
+      @setOption 5,3
+      @setOption 5,5
+      @setExpressRoller 3,4, 'ururrdlddrdrrulu'
+      @addLaser 5,0, 'd', 12 
+      @addLaser 0,4, 'r', 12 
     test: () ->
       @setVoid 1,1
       @setRoller 0,3, 'ur'
