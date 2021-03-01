@@ -168,7 +168,12 @@ class @Area
       @addStart 2,0, 'up'
       @addStart 3,0, 'up'
   @course:
-    holy_cross: () ->
+  Rennstrekk: () ->
+      @setOption 4,4
+      @setOption 6,4
+      @setOption 5,3
+      @setOption 5,5      
+  holy_cross: () ->
       @addWall  2, 5, 'down'
       @addWall  1, 5, 'down'
       @addWall  0, 5, 'down'
