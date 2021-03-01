@@ -198,7 +198,7 @@ class @Area
       @addWall  6, 2, 'right'
       @addWall  7, 6, 'right'
       @addWall  7, 7, 'right'
-      @addWall  7, 7, 'right'
+      @addWall  7, 8, 'right'
       @addWall  7, 10, 'right'
       @addWall  7, 9, 'right'
       @setExpressRoller 0,10, 'drrru'
