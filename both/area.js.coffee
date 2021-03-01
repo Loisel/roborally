@@ -17,8 +17,6 @@ class @Area
     @addWall 11, 7, 'r'
     @addWall 11, 9, 'r'
     
-@start:
-
   holy_cross: () ->
    @addWall  4, 5, 'left'
    @addWall  4, 6, 'left'
