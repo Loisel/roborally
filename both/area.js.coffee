@@ -168,7 +168,7 @@ class @Area
       @addStart 2,0, 'up'
       @addStart 3,0, 'up'
   @course:
-  Rennstrekk: () ->
+  rennstrekk: () ->
       @setOption 4,4
       @setOption 6,4
       @setOption 5,3
@@ -274,7 +274,7 @@ class @Area
       @setExpressRoller 0,5, 'rrrddrrrrruurrrr'
       @setExpressRoller 11,4, 'llluulllllddllll'
 
-    please_mind_the_gap: () ->
+    mind_the_gap: () ->
       @addWall  4, 5, 'left'
       @addWall  4, 6, 'left'
       @addWall  4, 7, 'left'
