@@ -169,12 +169,12 @@ class @Area
       @addStart 3,0, 'up'
   @course:
     holy_cross: () ->
+      @addWall  2, 5, 'down'
       @addWall  1, 5, 'down'
       @addWall  0, 5, 'down'
       @addWall  0, 3, 'up'
       @addWall  1, 3, 'up'
       @addWall  2, 3, 'up'
-      @addWall  3, 3, 'up'
       @addWall  7, 3, 'up'
       @addWall  8, 3, 'up'
       @addWall  9, 3, 'up'
@@ -184,6 +184,8 @@ class @Area
       @addWall  9, 5, 'down'
       @addWall  10, 5, 'down'
       @addWall  11, 5, 'down'
+      @addWall  3, 2, 'left'
+      @addWall  3, 2, 'up'
       @addWall  3, 6, 'left'
       @addWall  3, 7, 'left'
       @addWall  3, 8, 'left'
