@@ -236,6 +236,27 @@ class @Area
       @setExpressRoller 3,9, 'ddd'
       @setVoid 0, 8,
       
+      holy_cross: () ->
+      @addWall  4, 5, 'left'
+      @addWall  4, 6, 'left'
+      @addWall  4, 7, 'left'
+      @addWall  4, 8, 'left'
+      @addWall  4, 11, 'left'
+      @addWall  4, 10, 'left'
+      @addWall  4, 9, 'left'
+      @addWall  7, 5, 'right'
+      @addWall  7, 6, 'right'
+      @addWall  7, 7, 'right'
+      @addWall  7, 8, 'right'
+      @addWall  7, 10, 'right'
+      @addWall  7, 9, 'right'
+      @addWall  7, 11, 'right'
+      @setExpressRoller 0,9, 'ddd'
+      @setExpressRoller 1,9, 'ddd'
+      @setExpressRoller 2,9, 'ddd'
+      @setExpressRoller 3,9, 'ddd'
+      @setVoid 0, 8,
+      
     schnoi2: () ->
       @setVoid 0, 8
       @setVoid 1, 8
