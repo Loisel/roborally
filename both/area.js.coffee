@@ -169,7 +169,6 @@ class @Area
       @addStart 3,0, 'up'
   @course:
     holy_cross: () ->
-      @addWall  2, 5, 'down'
       @addWall  1, 5, 'down'
       @addWall  0, 5, 'down'
       @addWall  0, 3, 'up'
