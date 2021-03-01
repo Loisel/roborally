@@ -10,8 +10,7 @@ class @BoardBox
                # with special rules
                'tricksy', #moving_targets',
                'set_to_kill', 'factory_rejects', 'option_world', 'tight_collar', 
-               'ball_lightning',  'flag_fry', 'crowd_chess' , 'custom_made', 'quarter_pounder', 'schnoi', 'schnoi2', 'please_mind_the_gap', 'holy_cross'
-             ]
+               'ball_lightning',  'flag_fry', 'crowd_chess' , 'custom_made', 'quarter_pounder', 'schnoi', 'schnoi2', 'please_mind_the_gap', 'holy_cross']
 
 
   @BEGINNER_COURSE_CNT = 11
