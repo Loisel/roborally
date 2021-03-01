@@ -175,6 +175,7 @@ class @Area
       @addWall  0, 3, 'up'
       @addWall  1, 3, 'up'
       @addWall  2, 3, 'up'
+      @addWall  2, 4, 'up'
       @addWall  7, 3, 'up'
       @addWall  8, 3, 'up'
       @addWall  9, 3, 'up'
@@ -199,15 +200,17 @@ class @Area
       @addWall  7, 5, 'right'
       @addWall  7, 6, 'right'
       @addWall  7, 7, 'right'
-      @addWall  7, 8, 'right'
       @addWall  7, 10, 'right'
       @addWall  7, 9, 'right'
       @addWall  7, 11, 'right'
-      @setExpressRoller 0,9, 'ddd'
-      @setExpressRoller 1,9, 'ddd'
-      @setExpressRoller 2,9, 'ddd'
-      @setExpressRoller 3,9, 'ddd'
-      @setVoid 0, 8,
+      @setExpressRoller 0,10, 'drrru'
+      @setExpressRoller 11,10, 'dlllu'
+      @setVoid 3, 10,
+      @setVoid 7, 10,
+      @setRoller 4,10, 'l'
+      @setRoller 6,10, 'r'
+      @setRoller 4,8, 'r'
+      @setRoller 6,8, 'l'
       
     test: () ->
       @setVoid 1,1
