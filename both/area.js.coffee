@@ -185,6 +185,7 @@ class @Area
       @addWall  11, 5, 'down'
       @addWall  3, 2, 'left'
       @addWall  3, 2, 'up'
+      @addWall  7, 2, 'up'
       @addWall  3, 6, 'left'
       @addWall  3, 7, 'left'
       @addWall  3, 8, 'left'
@@ -199,6 +200,7 @@ class @Area
       @addWall  7, 8, 'right'
       @addWall  7, 10, 'right'
       @addWall  7, 9, 'right'
+      @addWall  7, 2, 'right'
       @setExpressRoller 0,10, 'drrru'
       @setExpressRoller 11,10, 'dllllu'
       @setVoid 3, 10,
