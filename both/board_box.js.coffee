@@ -73,7 +73,6 @@ class @BoardBox
       board.addCheckpoint(6, 4)
       board.addCheckpoint(6, 5)
       return board
-    
     please_mind_the_gap: () ->
       board = new Board('please_mind_the_gap',1)
       board.length = 'short'
@@ -84,10 +83,9 @@ class @BoardBox
       board.addCheckpoint(6, 4)
       board.addCheckpoint(6, 5)
       return board
-    
     holy_cross: () ->
       board = new Board('holy_cross',1)
-      board.length = 'short'
+      board.length = 'medium'
       board.addRallyArea('holy_cross')
       board.addStartArea('roller3')
       board.addCheckpoint(5, 4)
@@ -95,7 +93,6 @@ class @BoardBox
       board.addCheckpoint(6, 4)
       board.addCheckpoint(6, 5)
       return board
-    
     schnoi2: () ->
       board = new Board('schnoi2',1)
       board.length = 'short'
