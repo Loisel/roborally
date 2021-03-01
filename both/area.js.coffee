@@ -217,6 +217,10 @@ class @Area
       @setExpressRoller 3,4, 'ururrdrddldllulu'
       @addLaser 5,0, 'd', 12 
       @addLaser 0,4, 'r', 12 
+      @setRepair 3,2
+      @setRepair 3,6
+      @setRepair 7,2
+      @setRepair 7,6
     test: () ->
       @setVoid 1,1
       @setRoller 0,3, 'ur'
