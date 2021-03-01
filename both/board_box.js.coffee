@@ -10,7 +10,7 @@ class @BoardBox
                # with special rules
                'tricksy', #moving_targets',
                'set_to_kill', 'factory_rejects', 'option_world', 'tight_collar', 
-               'ball_lightning',  'flag_fry', 'crowd_chess' , 'custom_made', 'quarter_pounder', 'schnoi', 'schnoi2', 'please_mind_the_gap', 'holy_cross'
+               'ball_lightning',  'flag_fry', 'crowd_chess' , 'custom_made', 'quarter_pounder', 'schnoi', 'schnoi2', 'please_mind_the_gap', 'holy_cross', 'rennstrekk'
              ]
 
 
@@ -82,6 +82,16 @@ class @BoardBox
       board.addCheckpoint(5, 5)
       board.addCheckpoint(6, 4)
       board.addCheckpoint(6, 5)
+      return board
+    holy_cross: () ->
+      board = new Board('rennstrekk',1)
+      board.length = 'short'
+      board.addRallyArea('rennstrekk')
+      board.addStartArea('roller3')
+      board.addCheckpoint(5, 0)
+      board.addCheckpoint(7, 0)
+      board.addCheckpoint(4, 0)
+      board.addCheckpoint(6, 0)
       return board
     holy_cross: () ->
       board = new Board('holy_cross',1)
