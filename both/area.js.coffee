@@ -171,10 +171,10 @@ class @Area
   @course:
 
     rennstrekk: () ->
-      @setOption 4,4
-      @setOption 6,4
-      @setOption 5,3
-      @setOption 7,3
+      @setOption 4,5
+      @setOption 6,5
+      @setOption 5,5
+      @setOption 7,5
 
     holy_cross: () ->
       @addWall  2, 5, 'down'
