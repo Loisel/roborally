@@ -184,9 +184,15 @@ class @Area
       @setVoid 11, 8,
       @setVoid 0, 6,
       @setVoid 5, 0,
+      @setVoid 0, 2,
+      @setVoid 11, 4,
+      @setVoid 2, 6,
+      @setVoid 4, 6,
+      @setVoid 9, 6,
       @setPusher 8, 0, 'down', 'even'
       @setPusher 9, 0, 'down', 'odd'
       @addLaser 7,0, 'd', 12
+      @addLaser 2,0, 'd', 12
       Area.boundaryWalls.call(@)
     rennstrekk: () ->
       @setOption 4,5
