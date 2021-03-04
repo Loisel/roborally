@@ -210,7 +210,7 @@ class @Area
       @setOption 11,0
       @setOption 1,4
       @setOption 6,6
-      @addWall  2, 6, 'right'
+      @addWall  2, 7, 'right'
       Area.boundaryWalls.call(@)
     rennstrekk: () ->
       @setOption 4,5
