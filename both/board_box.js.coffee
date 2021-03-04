@@ -10,7 +10,7 @@ class @BoardBox
                # with special rules
                'tricksy', #moving_targets',
                'set_to_kill', 'factory_rejects', 'option_world', 'tight_collar', 
-               'ball_lightning',  'flag_fry', 'crowd_chess' , 'custom_made', 'quarter_pounder', 'schnoi', 'schnoi2', 'mind_the_gap', 'holy_cross', 'rennstrekk'
+               'ball_lightning',  'flag_fry', 'crowd_chess' , 'custom_made', 'quarter_pounder', 'schnoi', 'schnoi2', 'mind_the_gap', 'holy_cross', 'rennstrekk', 'snake'
              ]
 
 
@@ -52,6 +52,16 @@ class @BoardBox
       board.addCheckpoint(7, 3)
       board.addCheckpoint(1, 8)
       board.addCheckpoint(7, 7)
+      return board
+    snake: () ->
+      board = new Board('snake',1)
+      board.length = 'short'
+      board.addRallyArea('snake')
+      board.addStartArea('roller2')
+      board.addCheckpoint(6, 0)
+      board.addCheckpoint(6, 8)
+      board.addCheckpoint(2, 2)
+      board.addCheckpoint(9, 10)
       return board
     quarter_pounder: () ->
       board = new Board('quarter_pounder',1)
