@@ -272,10 +272,10 @@ class @Area
       @setRepair 7,2
       @setRepair 7,6
       @setPusher 8, 5, 'up', 'even'
-      @setPusher 8, 3, 'down', 'odd'
-      @setPusher 2, 3, 'down', 'even'
       @setPusher 1, 5, 'up', 'even'
       @setPusher 11, 4, 'left', 'odd'
+      @setGear 8,3, 'ccw'
+      @setGear 2,3, 'cw'
     test: () ->
       @setVoid 1,1
       @setRoller 0,3, 'ur'
