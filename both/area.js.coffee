@@ -165,13 +165,18 @@ class @Area
     test: () ->
       @addStart 0,0, 'up'
       @addStart 1,0, 'up'
-      @addStart 2,0, 'up'
+      @addStart 4,0, 'up'
       @addStart 3,0, 'up'
+      @addStart 5,0, 'up'
+      @addStart 6,0, 'up'
+      @addStart 8,0, 'up'
+      @addStart 10,0, 'up'
 
   @course:
 
     snake: () ->
       @setExpressRoller 0,11, 'rrrrrrrrrrruullllllllllluurrrrrrrrrrruullllllllllluurrrrrrrrrrruullllllllllluu'
+      @setVoid 3, 10,
       Area.boundaryWalls.call(@)
     rennstrekk: () ->
       @setOption 4,5
