@@ -163,14 +163,14 @@ class @Area
       @addStart 11, 2, 'up'
 
     test: () ->
-      @addStart 0,0, 'up'
-      @addStart 1,0, 'up'
-      @addStart 4,0, 'up'
-      @addStart 3,0, 'up'
-      @addStart 5,0, 'up'
-      @addStart 6,0, 'up'
-      @addStart 8,0, 'up'
-      @addStart 10,0, 'up'
+      @addStart 0,3, 'up'
+      @addStart 1,3, 'up'
+      @addStart 3,3, 'up'
+      @addStart 5,3, 'up'
+      @addStart 6,3, 'up'
+      @addStart 8,3, 'up'
+      @addStart 10,3, 'up'
+      @addStart 11,3, 'up'
 
   @course:
 
