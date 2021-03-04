@@ -170,6 +170,9 @@ class @Area
 
   @course:
 
+    snake: () ->
+      @setExpressRoller 0,11, 'rrrrrrrrrrruullllllllllluurrrrrrrrrrruullllllllllluurrrrrrrrrrruullllllllllluu'
+      Area.boundaryWalls.call(@)
     rennstrekk: () ->
       @setOption 4,5
       @setOption 6,5
