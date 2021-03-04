@@ -192,6 +192,8 @@ class @Area
       @setVoid 8, 8,
       @setVoid 5, 4,
       @setVoid 6, 4,
+      @setGear 3,8, 'ccw'
+      @setGear 6,2, 'cw'
       @setPusher 8, 0, 'down', 'even'
       @setPusher 9, 0, 'down', 'odd'
       @setPusher 8, 6, 'left', 'odd'
