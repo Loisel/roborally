@@ -177,6 +177,12 @@ class @Area
     snake: () ->
       @setExpressRoller 0,11, 'rrrrrrrrrrruullllllllllluurrrrrrrrrrruullllllllllluurrrrrrrrrrruullllllllllluu'
       @setVoid 3, 10,
+      @setVoid 0, 10,
+      @setVoid 1, 10,
+      @setVoid 5, 10,
+      @setVoid 6, 10,
+      @setVoid 11, 8,
+      @setVoid 0, 6,
       Area.boundaryWalls.call(@)
     rennstrekk: () ->
       @setOption 4,5
