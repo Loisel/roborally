@@ -251,8 +251,8 @@ class @Area
       @addWall  7, 10, 'right'
       @addWall  7, 9, 'right'
       @addWall  7, 2, 'right'
-      @setExpressRoller 0,10, 'drrrr'
-      @setExpressRoller 11,10, 'dlllll'
+      @setExpressRoller 0,10, 'drrrrr'
+      @setExpressRoller 11,10, 'dllllll'
       @setVoid 3, 10,
       @setVoid 7, 10,
       @setRoller 4,10, 'l'
