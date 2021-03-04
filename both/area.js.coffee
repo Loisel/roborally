@@ -190,11 +190,14 @@ class @Area
       @setVoid 4, 6,
       @setVoid 9, 6,
       @setVoid 8, 8,
+      @setVoid 5, 4,
+      @setVoid 6, 4,
       @setPusher 8, 0, 'down', 'even'
       @setPusher 9, 0, 'down', 'odd'
       @setPusher 8, 6, 'left', 'odd'
       @setPusher 9, 10, 'up', 'odd'
       @setPusher 2, 2, 'up', 'odd'
+      @setPusher 5, 8, 'up', 'even'
       @addLaser 7,0, 'd', 12
       @addLaser 2,0, 'd', 12
       Area.boundaryWalls.call(@)
