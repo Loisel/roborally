@@ -205,7 +205,7 @@ class @Area
       @addLaser 7,0, 'd', 12
       @addLaser 2,0, 'd', 12
       @setOption 11,0
-      @setOption 1,5
+      @setOption 1,4
       @setOption 6,6
       Area.boundaryWalls.call(@)
     rennstrekk: () ->
