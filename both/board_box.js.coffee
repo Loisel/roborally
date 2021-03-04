@@ -57,7 +57,7 @@ class @BoardBox
       board = new Board('snake',1)
       board.length = 'short'
       board.addRallyArea('snake')
-      board.addStartArea('anewstart')
+      board.addStartArea('test')
       board.addCheckpoint(6, 0)
       board.addCheckpoint(6, 8)
       board.addCheckpoint(2, 2)
