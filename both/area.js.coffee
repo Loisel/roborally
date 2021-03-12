@@ -174,6 +174,37 @@ class @Area
 
   @course:
 
+    Bridge: () ->
+      @setExpressRoller 0,4, 'rrrrruuuuu'
+      @setExpressRoller 11,4, 'llllllu'
+      @setExpressRoller 1,0, 'ddddr'      
+      @setExpressRoller 10,0, 'ddddl'
+      @setExpressRoller 1,11, 'uurrr'      
+      @setExpressRoller 10,11, 'uullll'
+      @setExpressRoller 3,11, 'uur'      
+      @setExpressRoller 8,11, 'uul'      
+      @setVoid 4, 6,
+      @setVoid 4, 7,
+      @setVoid 6, 6,
+      @setVoid 6, 7,
+      @setPusher 0, 0, 'right', 'even'
+      @setPusher 11, 0, 'left', 'even'
+      @setPusher 0, 11, 'right', 'odd'
+      @setPusher 11, 11, 'left', 'odd'
+      @setPusher 2, 0, 'down', 'odd'
+      @setPusher 3, 0, 'down', 'even'
+      @setPusher 7, 0, 'down', 'even'
+      @setPusher 8, 0, 'down', 'even'
+      @addLaser 2,5, 'r', 7
+      @addLaser 2,8, 'r', 7
+      @setOption 3,2
+      @setOption 8,2
+      @setRepair 0,6
+      @setRepair 0,7
+      @setRepair 11,6
+      @setRepair 11,7
+      Area.boundaryWalls.call(@)
+
     snake: () ->
       @setExpressRoller 0,11, 'rrrrrrrrrrruullllllllllluurrrrrrrrrrruullllllllllluurrrrrrrrrrruullllllllllluu'
       @setVoid 3, 10,
