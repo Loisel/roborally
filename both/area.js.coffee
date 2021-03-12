@@ -203,6 +203,15 @@ class @Area
       @setRepair 0,7
       @setRepair 11,6
       @setRepair 11,7
+      @addWall  0, 7, 'up'
+      @addWall  1, 7, 'up'
+      @addWall  2, 7, 'up'
+      @addWall  3, 7, 'up'
+      @addWall  7, 7, 'up'
+      @addWall  8, 7, 'up'
+      @addWall  9, 7, 'up'
+      @addWall  10, 7, 'up'
+      @addWall  11, 7, 'up'     
       Area.boundaryWalls.call(@)
 
     snake: () ->
