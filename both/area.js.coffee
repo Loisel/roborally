@@ -179,8 +179,8 @@ class @Area
       @setExpressRoller 11,4, 'llllllu'
       @setExpressRoller 1,0, 'ddddr'      
       @setExpressRoller 10,0, 'ddddl'
-      @setExpressRoller 1,11, 'uurrr'      
-      @setExpressRoller 10,11, 'uullll'
+      @setExpressRoller 1,11, 'uurrrr'      
+      @setExpressRoller 10,11, 'uulllll'
       @setExpressRoller 3,11, 'uur'      
       @setExpressRoller 8,11, 'uul'      
       @setVoid 4, 6,
