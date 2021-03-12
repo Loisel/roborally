@@ -174,7 +174,7 @@ class @Area
 
   @course:
 
-    Bridge: () ->
+    bridge: () ->
       @setExpressRoller 0,4, 'rrrrruuuuu'
       @setExpressRoller 11,4, 'llllllu'
       @setExpressRoller 1,0, 'ddddr'      
