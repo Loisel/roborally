@@ -58,9 +58,9 @@ class @BoardBox
       board.length = 'short'
       board.addRallyArea('bridge')
       board.addStartArea('test')
-      board.addCheckpoint(0, 0)
-      board.addCheckpoint(11, 8)
+      board.addCheckpoint(11, 0)
       board.addCheckpoint(0, 11)
+      board.addCheckpoint(0, 0)     
       board.addCheckpoint(11, 11)
       return board
     snake: () ->
