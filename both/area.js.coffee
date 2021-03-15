@@ -204,7 +204,7 @@ class @Area
       @setPusher 2, 0, 'down', 'odd'
       @setPusher 3, 0, 'down', 'even'
       @setPusher 7, 0, 'down', 'even'
-      @setPusher 8, 0, 'down', 'even'
+      @setPusher 8, 0, 'down', 'odd'
       @addLaser 2,5, 'r', 7
       @addLaser 2,8, 'r', 7
       @setOption 3,2
