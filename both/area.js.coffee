@@ -184,14 +184,15 @@ class @Area
   @course:
 
     bridge: () ->
-      @setExpressRoller 0,4, 'rrrrruuuuu'
+      @setExpressRoller 0,4, 'rrrrru'
       @setExpressRoller 11,4, 'llllllu'
       @setExpressRoller 1,0, 'ddddr'      
       @setExpressRoller 10,0, 'ddddl'
       @setExpressRoller 1,11, 'uurrrr'      
       @setExpressRoller 10,11, 'uulllll'
       @setExpressRoller 3,11, 'uur'      
-      @setExpressRoller 8,11, 'uul'      
+      @setExpressRoller 8,11, 'uul'
+      @setRoller 5,3, 'uuuu'
       @setVoid 4, 6,
       @setVoid 4, 7,
       @setVoid 6, 6,
@@ -211,7 +212,7 @@ class @Area
       @setRepair 4,11
       @setRepair 7,11
       @setRepair 0,6
-      @setRepair 0,9
+      @setOption 0,9
       @setOption 11,6
       @setOption 11,9
       @addWall  0, 7, 'up'
