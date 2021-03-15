@@ -172,6 +172,15 @@ class @Area
       @addStart 10,3, 'up'
       @addStart 11,3, 'up'
 
+    test2: () ->
+      @addStart 0,3, 'up'
+      @addStart 1,3, 'up'
+      @addStart 3,3, 'up'
+      @addStart 8,3, 'up'
+      @addStart 10,3, 'up'
+      @addStart 11,3, 'up'
+
+
   @course:
 
     bridge: () ->
@@ -199,10 +208,12 @@ class @Area
       @addLaser 2,8, 'r', 7
       @setOption 3,2
       @setOption 8,2
+      @setRepair 4,11
+      @setRepair 7,11
       @setRepair 0,6
-      @setRepair 0,7
-      @setRepair 11,6
-      @setRepair 11,7
+      @setRepair 0,9
+      @setOption 11,6
+      @setOption 11,9
       @addWall  0, 7, 'up'
       @addWall  1, 7, 'up'
       @addWall  2, 7, 'up'
