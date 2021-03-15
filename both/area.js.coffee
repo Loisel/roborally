@@ -185,28 +185,29 @@ class @Area
 
     bridge: () ->
       @setExpressRoller 0,4, 'rrrrru'
-      @setExpressRoller 11,4, 'llllllu'
+      @setExpressRoller 11,4, 'lllllu'
       @setExpressRoller 1,0, 'ddddr'      
       @setExpressRoller 10,0, 'ddddl'
       @setExpressRoller 1,11, 'uurrrr'      
-      @setExpressRoller 10,11, 'uulllll'
+      @setExpressRoller 10,11, 'uullll'
       @setExpressRoller 3,11, 'uur'      
       @setExpressRoller 8,11, 'uul'
       @setRoller 5,3, 'uuuu'
+      @setRoller 6,3, 'uuuu'
       @setVoid 4, 6,
       @setVoid 4, 7,
-      @setVoid 6, 6,
-      @setVoid 6, 7,
+      @setVoid 7, 6,
+      @setVoid 7, 7,
       @setPusher 0, 0, 'right', 'even'
       @setPusher 11, 0, 'left', 'even'
       @setPusher 0, 11, 'right', 'odd'
       @setPusher 11, 11, 'left', 'odd'
       @setPusher 2, 0, 'down', 'odd'
       @setPusher 3, 0, 'down', 'even'
-      @setPusher 7, 0, 'down', 'even'
-      @setPusher 8, 0, 'down', 'odd'
-      @addLaser 2,5, 'r', 7
-      @addLaser 2,8, 'r', 7
+      @setPusher 8, 0, 'down', 'even'
+      @setPusher 9, 0, 'down', 'odd'
+      @addLaser 2,5, 'r', 8
+      @addLaser 2,8, 'r', 8
       @setOption 3,2
       @setOption 8,2
       @setRepair 4,11
@@ -219,7 +220,6 @@ class @Area
       @addWall  1, 7, 'up'
       @addWall  2, 7, 'up'
       @addWall  3, 7, 'up'
-      @addWall  7, 7, 'up'
       @addWall  8, 7, 'up'
       @addWall  9, 7, 'up'
       @addWall  10, 7, 'up'
